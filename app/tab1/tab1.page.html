@@ -1,0 +1,33 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu Content</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-button href="/tabs/tab2">Clique aqui</ion-button>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Menu</ion-title>
+      <ion-progress-bar type="determinate" [value]="progressValue"></ion-progress-bar>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding"> Pág
+    <ion-list>
+  <ion-item>
+    <ion-select placeholder="Select a Fruit">
+      <div slot="label">Fruta favorita <ion-text color="danger">(Required)</ion-text></div>
+      <ion-select-option value="apple">Maçã</ion-select-option>
+      <ion-select-option value="banana">Banana</ion-select-option>
+      <ion-select-option value="orange">Laranja</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+  </ion-content>
+</div>
